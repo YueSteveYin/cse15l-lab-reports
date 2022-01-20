@@ -37,7 +37,7 @@ I am a example of heaing 2 too
 ---
 ***
 
-'I am an Inline Code'
+`I am an Inline Code`
 
-#code block
+# code block
 system.out.println("Hello World");
