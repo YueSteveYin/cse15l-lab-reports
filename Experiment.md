@@ -38,6 +38,7 @@ I am a example of heaing 2 too
 ***
 
 `I am an Inline Code`
-
+```
 # code block
 system.out.println("Hello World");
+```
