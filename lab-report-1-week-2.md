@@ -27,3 +27,6 @@
 4. here is the screenshot of the terminal when doing these proccess: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot4.PNG)
 
 ## SSHKeys
+1. At terminal, follow the instruction of [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation) to set up the SSHKeys. Once succeed the full terminal should look like this: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot5.PNG)
+2. in the client terminal, login ssh, enter command `mkdir .ssh` and log out, then uce command `scp publickeylocation username@servername:~/.ssh/authorized_keys` 
+3. the key should be set up and you can ssh login and scp without putting in password every time. The result should look like this: ![Image](https://github.com/YueSteveYin/cse15l-lab-reports/blob/main/CSE12%20Lab%20report%20screenshot6.PNG)
