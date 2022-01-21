@@ -18,4 +18,12 @@
   * cp: Copy file or folder
   * cat: show content of a file
   * exit: exit ssh
- 
+3. here are some commends on the run: ![Image](https://github.com/YueSteveYin/cse15l-lab-reports/blob/main/CSE12%20Lab%20report%20screenshot3.PNG)
+
+## Moving Files over SSH with scp
+1. Creating file on the code editor end
+2. in the terminal put in code `scp filename username@server:~/` and put in the password when propmt
+3. log into the ssh, put in command `ls` and you can see your file already been added to the directory
+4. here is the screenshot of the terminal when doing these proccess: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot4.PNG)
+
+## SSHKeys
