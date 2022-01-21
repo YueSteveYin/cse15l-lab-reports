@@ -30,10 +30,10 @@
 ## setting an SSH Key
 1. At terminal, follow the instruction of [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation) to set up the SSHKeys. Once succeed the full terminal should look like this: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot5.PNG)
 2. in the client terminal, login ssh, enter command `mkdir .ssh` and log out, then uce command `scp publickeylocation username@servername:~/.ssh/authorized_keys` 
-3. the key should be set up and you can ssh login and scp without putting in password every time. The result should look like this: ![Image](https://github.com/YueSteveYin/cse15l-lab-reports/blob/main/CSE12%20Lab%20report%20screenshot6.PNG)
+3. the key should be set up and you can ssh login and scp without putting in password every time. The result should look like this: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot6.PNG)
 
 ## Optimizing Remote Running
 1. up brings up last comment put (can use for faster ssh log in)
 2. append command like ls in "" after ssh login command works
 3. use semicolons to seperate each command to run multiple command
-4. I am able to copy and check it and run it in a single line of code using the technique above and copy&paste. during the time I try, I found out that when I try to copy the file and run it right after copying it would be a time out and disconnection, ends up not able to copy the file but still runs the file. Here are the final result of my terminal(The first one is a success one, the second one is hte situation I a talking about)![Image](https://github.com/YueSteveYin/cse15l-lab-reports/blob/main/CSE12%20Lab%20report%20screenshot7.PNG)
+4. I am able to copy and check it and run it in a single line of code using the technique above and copy&paste. during the time I try, I found out that when I try to copy the file and run it right after copying it would be a time out and disconnection, ends up not able to copy the file but still runs the file. Here are the final result of my terminal(The first one is a success one, the second one is hte situation I a talking about)![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot7.PNG)
