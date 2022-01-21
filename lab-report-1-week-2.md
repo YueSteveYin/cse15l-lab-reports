@@ -19,7 +19,7 @@
   * cp: Copy file or folder
   * cat: show content of a file
   * exit / ctrl D: exit ssh
-3. here are some commends on the run (there are several command in the example that I have not permission to, I suspect that it's beacause the different system. It should work if I am on Linux system but I am in Windows System): ![Image](https://github.com/YueSteveYin/cse15l-lab-reports/blob/main/CSE12%20Lab%20report%20screenshot3.PNG)
+3. here are some commends on the run (there are several command in the example that I have not permission to, I suspect that it's beacause the different system. It should work if I am on Linux system but I am in Windows System): ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot3.PNG)
 
 ## Moving Files over SSH with scp
 1. Creating file on the code editor end
