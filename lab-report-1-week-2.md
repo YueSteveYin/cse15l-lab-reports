@@ -7,7 +7,7 @@
 ## Remotely Connection
 1. follow the instruction on the website [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
 2. go on school account/host/server to set up the accound and password[Link](https://sdacs.ucsd.edu/~icc/index.php)(here i encountered a little problem. the username should be the "sub-account" that the school gave me for the course but it won't work, what's working is the main account, which is the username(school email).)
-4. type ssh username@serveranme in the terminal, type yes, and put in your password(the password won't show for security reason). It should look like this once successfully connected: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot2.PNG)
+4. type `ssh username@serveranme` in the terminal, type yes, and put in your password(the password won't show for security reason). It should look like this once successfully connected: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE12%20Lab%20report%20screenshot2.PNG)
 
 ## Run Some Commands
 1. After ssh-ing, you can run commands in the terminal
