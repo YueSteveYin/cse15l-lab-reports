@@ -1,4 +1,4 @@
-# lab 3 changes
+# Lab 3 changes
 Here is the overall changes I made to the file: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE%2012%20Lab%20Report2%20Screenshot1.1.PNG)
 below are the three bugs I fixed from the original file
 1) I fixed the prantecies: when there are prantecies in the website URL the original file would be caught in a infinite loop here is how I fixed it: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE%2012%20Lab%20Report2%20Screenshot2.2PNG.PNG)
@@ -15,3 +15,5 @@ below are the three bugs I fixed from the original file
 2) Link to the test file for a failure-inducing input that prompted me to make the change [link](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/test-file3.md)
 3) The failure input and output: ![Image](https://raw.githubusercontent.com/YueSteveYin/cse15l-lab-reports/main/CSE%2012%20Lab%20Report2%20Screenshot6.PNG)
 4) The input only have a brakect, but since the original program recognize the brackets it starts to search for prantecies, which will have a index of -1. Thus when the program run it will out put `indexOutOfBoundsException()` since it's trying to use `substring()`. 
+***********
+# Lab 4 Changes
