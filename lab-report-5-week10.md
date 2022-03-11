@@ -22,7 +22,7 @@ this is the ooutput I got from running `diff filepath filepath`
 ---
 > []
 491c492
-< [/f&ouml;&ouml; "f&ouml;&ouml;"] 32
+< [/f&ouml;&ouml; "f&ouml;&ouml;"]
 ---
 > []
 691c692
@@ -127,7 +127,7 @@ this is the ooutput I got from running `diff filepath filepath`
 1121a1120
 > []
 ```
-## first bug:
+## first Difference:
 The output for file 577 is not intended for the class's program, while the output for our program is correct. 
 ```
 1064c1062
@@ -138,4 +138,12 @@ The output for file 577 is not intended for the class's program, while the outpu
 while our programm output nothing for getlink, the class's file regard an image link as a link, which is not intended for this program: the image link should not be outputed as a link.
 Since the only difference between a link format and a image format is the exclamation mark before the bracket. And in the class's program there is no condition check for the exclamation mark before the bracket, thus the program recognized the image link as a link. The fix for this is to add a condition in the program to check if there exist an excalamation mark right in fornt of a bracket `[link]`. If there is a excalamtion mark that is right in front of the bracket that is used to be declearing a link(`![link]`), the rest is not considered a link thus will return nothing for the link inside the prentacies right after that notion. \
 
-## second bug:
+## second Difference:
+The output for file 32 is not intended for the class's program, while the output for our program is also not intended 
+```
+491c492
+< [/f&ouml;&ouml; "f&ouml;&ouml;"]
+---
+> []
+```
+In this case My program produced the wrong output and the class's program did not even produced an output. According to the VScode preview, VScode got a link for the file as `föö`. There is no fix for our program for this situation since we don't knwo how to implement the rules for the special characters and induce a result witht eh special charachters. While for the class's implementation, it did not produce any result since the program simply just broke when there is a space in the "link". As I said, there is no fix for the special charachters part unless we learn the rules for outputing special characters and knows how to output them, but for the space error, we can introduce an if statement and passit it through conditions to detect if there is space in the potential link(between the prentacies), so that the prgram won't broke and output nothing in the case of space. 
