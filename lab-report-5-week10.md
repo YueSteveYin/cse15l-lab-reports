@@ -4,7 +4,7 @@ First clone both of my repository and the class's repository to my remote. go in
 Then use command `bash script.sh>results1.txt` and `bash script.sh>results2.txt` in both files to run the script and store them into two different result file. Then run the command
 `diff filepath filepath` to compare the two files and get the difference between them. 
 
-## difference and fix
+## Output for diff
 this is the ooutput I got from running `diff filepath filepath` 
 ```
 157a158
@@ -22,7 +22,7 @@ this is the ooutput I got from running `diff filepath filepath`
 ---
 > []
 491c492
-< [/f&ouml;&ouml; "f&ouml;&ouml;"]
+< [/f&ouml;&ouml; "f&ouml;&ouml;"] 32
 ---
 > []
 691c692
@@ -127,4 +127,15 @@ this is the ooutput I got from running `diff filepath filepath`
 1121a1120
 > []
 ```
-The 
+## first bug:
+The output for file 577 is not intended for the class's program, while the output for our program is correct. 
+```
+1064c1062
+< []
+---
+> [train.jpg]
+```
+while our programm output nothing for getlink, the class's file regard an image link as a link, which is not intended for this program: the image link should not be outputed as a link.
+Since the only difference between a link format and a image format is the exclamation mark before the bracket. And in the class's program there is no condition check for the exclamation mark before the bracket, thus the program recognized the image link as a link. The fix for this is to add a condition in the program to check if there exist an excalamation mark right in fornt of a bracket `[link]`. If there is a excalamtion mark that is right in front of the bracket that is used to be declearing a link(`![link]`), the rest is not considered a link thus will return nothing for the link inside the prentacies right after that notion. \
+
+## second bug:
